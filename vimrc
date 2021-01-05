@@ -156,7 +156,7 @@ let g:solarized_termcolors=256
 let g:solarized_termtrans=1
 " let g:hybrid_use_Xresources = 1
 " let g:rehash256 = 1
-colorscheme solarized
+"colorscheme evening
 set guifont=Inconsolata:h15
 set guioptions-=L
 
@@ -384,6 +384,9 @@ augroup END
 " spell check for git commits
 autocmd FileType gitcommit setlocal spell
 
+" open nerdTree on startup
+" autocmd VimEnter * NERDTree
+
 " Wildmenu completion {{{
 set wildmenu
 " set wildmode=list:longest
@@ -575,7 +578,7 @@ let g:vim_markdown_json_frontmatter = 1
 
 " =================== vim-airline ========================
 
-let g:airline_theme='solarized'
+"let g:airline_theme='solarized'
 
 " set to use powerline fonts when not in a ssh session
 let g:remoteSession = ($STY == "")
@@ -631,4 +634,7 @@ function! s:check_back_space() abort
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
 
+" Personal map
+map <C-c> "+y<CR>
+set clipboard=unnamedplus
 " vim:ts=2:sw=2:et

@@ -112,3 +112,6 @@
 [submodule "bundle/openai.vim"]
 	path = bundle/openai.vim
 	url = https://github.com/jessfraz/openai.vim.git
+[submodule "bundle/gruvbox-vim"]
+	path = bundle/gruvbox-vim
+	url =  https://github.com/morhetz/gruvbox.git
